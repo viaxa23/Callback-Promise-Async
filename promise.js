@@ -39,3 +39,14 @@ function createPost(post,){
 createPost({'title' : 'Post three', 'body' : 'This is post three'})
 .then(getPosts)
 .catch(error => console.log(error));
+
+const promise_2 = fetch(`https://jsonplaceholder.typicode.com/users`)
+.then((resolve) => resolve.json());
+promise_2 //.then(values => console.log(values));
+    .then(
+        function megjelenit(values) {
+            let tablazat = `<table><tr><th>Név</th><th>Email</th></tr>`;
+            tablazat += '</table>';
+            tablazat += 
+        }
+    )
