@@ -36,4 +36,6 @@ function createPost(post,){
     
 } 
 
-createPost({'title' : 'Post three', 'body' : 'This is post three'}, getPosts);
+createPost({'title' : 'Post three', 'body' : 'This is post three'})
+.then(getPosts)
+.catch(error => console.log(error));
